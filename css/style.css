@@ -1,0 +1,58 @@
+.check{
+    list-style-image: url(../img/vineta.png);
+       margin-bottom: 10px;
+   }
+.card-overlay {
+    position: relative; 
+}
+
+.card-overlay:before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+    border-radius: 0.25rem; 
+}
+.border-transparent {
+    border-color: transparent;
+    margin: 10px 0; 
+    
+}
+.carta{
+    transition:all 300ms;
+    display:none;
+    position: relative;
+}
+
+.carta-click{
+    top:-15%;
+    display: block;
+    transition:all 300ms;
+}
+article{
+	position:relative;
+	width:100%;
+	overflow: hidden;
+}
+p{
+    text-align: justify;
+}
+@media (min-width: 992px) {
+    /* Mantén la configuración actual */
+  }
+  
+  /* Para pantallas más pequeñas (hasta 991px) */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      flex-direction: column; /* Cambia la dirección de los elementos en la columna */
+      align-items: center; /* Centra los elementos horizontalmente */
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px; /* Espacio entre el logo y el menú */
+    }
+  }
